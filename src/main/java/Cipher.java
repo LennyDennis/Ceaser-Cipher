@@ -12,5 +12,8 @@ public class Cipher {
     public String getText(){
         return this.mText;
     }
+    public String encryptText(){
+        return null;
+    }
 
 }
