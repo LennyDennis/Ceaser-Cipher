@@ -3,17 +3,13 @@ import static  org.junit.Assert.*;
 
 public class CipherTest {
     @Test
-    public void theString_shouldBeAString_hello(){
-        Cipher stringInput = new Cipher("hello",2);
-        assertEquals("hello" ,stringInput.getText());
+    public void theText_shouldBeTheText_hello(){
+        Cipher textInput = new Cipher("hello",2);
+        assertEquals("hello" ,textInput.getText());
     }
-//    @Test
-//    public void isInteger_shouldBeAnInteger_true(){
-//        Cipher stringInput = new Cipher("hello",2);
-//        assertEquals(true ,stringInput.getKey().getClass());
-//    }
-//      @Test
-//        public void encyrpt_text
-
-
+    @Test
+    public void theKey_shouldBeTheKey_2(){
+        Cipher keyInput = new Cipher("hello",2);
+        assertEquals(2,keyInput.getKey());
+    }
 }
