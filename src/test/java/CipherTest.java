@@ -12,4 +12,9 @@ public class CipherTest {
         Cipher keyInput = new Cipher("hello",2);
         assertEquals(2,keyInput.getKey());
     }
+    @Test
+    public void textEncryption_encryptTextBy2_encryptedText(){
+        Cipher textInput = new Cipher("hello",2);
+        assertEquals("jgnnq",textInput.encryptText());
+    }
 }
