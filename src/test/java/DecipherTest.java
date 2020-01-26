@@ -8,6 +8,11 @@ public class DecipherTest {
         Decipher textInput = new Decipher("jgnnq",2);
         assertEquals("jgnnq" ,textInput.getText());
     }
+    @Test
+    public void theKey_shouldBeTheKey_2(){
+        Decipher keyInput = new Decipher("jgnnq",2);
+        assertEquals(2,keyInput.getKey());
+    }
 
 }
 
