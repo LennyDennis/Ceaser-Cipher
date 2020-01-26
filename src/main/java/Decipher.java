@@ -30,14 +30,14 @@ public class Decipher {
             if(Character.isLetter(initialChar )){
                 if(Character.isLowerCase(initialChar)){
                     char newChar = (char)(initialChar-mKey);
-                    if(newChar>'a'){
+                    if(newChar<'a'){
                         decryptedText +=  (char)(initialChar+(26-mKey));
                     }else{
                         decryptedText += newChar;
                     }
                 }else{
-                    char newChar = (char)(initialChar+mKey);
-                    if(newChar>'A'){
+                    char newChar = (char)(initialChar-mKey);
+                    if(newChar<'A'){
                         decryptedText +=  (char)(initialChar+(26-mKey));
                     }else{
                         decryptedText += newChar;
@@ -48,7 +48,7 @@ public class Decipher {
             }
         }
 
-        return null;
+        return decryptedText;
     }
 }
 

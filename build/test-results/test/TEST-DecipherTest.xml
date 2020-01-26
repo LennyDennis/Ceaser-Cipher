@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="DecipherTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-01-26T08:38:32" hostname="Lenny" time="0.003">
+<testsuite name="DecipherTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-01-26T09:17:17" hostname="Lenny" time="0.006">
   <properties/>
-  <testcase name="theText_shouldBeTheText_hello" classname="DecipherTest" time="0.003"/>
-  <testcase name="theKey_shouldBeTheKey_2" classname="DecipherTest" time="0.0"/>
+  <testcase name="theKey_shouldBeTheKey_keyEntered" classname="DecipherTest" time="0.004"/>
+  <testcase name="textDecryption_decryptTextBy2_decryptedText" classname="DecipherTest" time="0.001"/>
+  <testcase name="theText_shouldBeTheText_textEntered" classname="DecipherTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

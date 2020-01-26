@@ -2,14 +2,15 @@ import org.junit.*;
 import static  org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
 
+
 public class DecipherTest {
     @Test
-    public void theText_shouldBeTheText_hello(){
+    public void theText_shouldBeTheText_textEntered(){
         Decipher textInput = new Decipher("jgnnq",2);
         assertEquals("jgnnq" ,textInput.getText());
     }
     @Test
-    public void theKey_shouldBeTheKey_2(){
+    public void theKey_shouldBeTheKey_keyEntered(){
         Decipher keyInput = new Decipher("jgnnq",2);
         assertEquals(2,keyInput.getKey());
     }
