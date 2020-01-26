@@ -13,6 +13,10 @@ public class DecipherTest {
         Decipher keyInput = new Decipher("jgnnq",2);
         assertEquals(2,keyInput.getKey());
     }
-
+    @Test
+    public void textDecryption_decryptTextBy2_decryptedText(){
+        Decipher textInput = new Decipher("jgnnq",2);
+        assertEquals("hello",textInput.decryptText());
+    }
 }
 
